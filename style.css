@@ -1,36 +1,46 @@
-*{
+* {
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
+    ;
 }
-header{
+
+header {
+    height: 506px;
     background-color: #fff6f6;
-    background-image: url('images/header_bg.png'), url(images/developer.png);
+    background-image: url('images/header_bg.png'), url('images/developer.png'), url('images/male.jpg');
     background-repeat: no-repeat;
-    background-position: bottom right, left;
+    background-size: 500px, contain, 350px;
+    background-position: right bottom, left;
 }
-.marry{
+
+.marry {
     color: #000000;
 }
-span{
+
+span {
     color: #FD6E0A;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     margin: 10px 200px;
-    align-items:center;
+    align-items: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     color: #474747;
 }
-nav li{
+
+nav li {
     list-style: none;
     font-size: 20px;
     margin-left: 50px;
 }
-.hire-me{
+
+.hire-me {
     background-color: #FD6E0A;
     color: #ffffff;
     padding: 18px 30px;
@@ -40,7 +50,8 @@ nav li{
     height: 55px;
     text-align: center;
 }
-.Down{
+
+.Down {
     background-color: #FD6E0A;
     color: #ffffff;
     padding: 18px 30px;
@@ -50,7 +61,8 @@ nav li{
     height: 55px;
     text-align: center;
 }
-.contact{
+
+.contact {
     background-color: #ffffff;
     color: #FD6E0A;
     padding: 16px 30px;
@@ -59,54 +71,77 @@ nav li{
     border-color: #FD6E0A;
     font-size: 20px;
 }
-.align{
-    margin: 0 10px 0 200px;
-    align-items:center;
+
+.align {
+    margin: 50px 10px 0 150px;
     display: flex;
+    align-items: end;
+    justify-content: space-around;
+    gap: 200px;
 }
-.name-pera{
+
+.img1 {
+    visibility: hidden;
+}
+
+.banner{
+    border-bottom: 0;
+}
+
+.name-pera {
     margin-bottom: 10px;
     color: #757575;
     font-size: 18px;
 }
-.name{
+
+.name {
     font-weight: 700;
     color: #000000;
     font-size: 85px;
 }
-.name-intro{
+
+.name-intro {
     color: #000000;
     font-weight: 600;
     font-size: 45px;
 }
 
-#about{
+#about {
     padding: 20px;
-    align: center;
+    align-items: center;
     margin: 20px 300px 100px;
     border-radius: 2px;
     background-color: rgb(255, 246, 246);
 }
-.ab{
+
+.ab {
     display: flex;
     font-size: 18px;
     align-items: center;
     justify-content: space-evenly;
 }
-.about{
+
+.about {
     text-align: center;
     font-size: 35px;
     margin-bottom: 50px;
 }
-.ab1, .ab2, .ab3, .ab4, .about-des{
+
+.ab1,
+.ab2,
+.ab3,
+.ab4,
+.about-des {
     color: #474747;
 }
-.about-des{
+
+.about-des {
     text-align: center;
     font-size: 18px;
     margin-bottom: 50px;
 }
-.gh{
+
+.gh {
     color: #474747;
     text-align: center;
     margin: 150px 300px 0px;
@@ -114,41 +149,49 @@ nav li{
     font-size: 35px;
     background-color: #fff6f6;
 }
-.gghh{
+
+.gghh {
     text-align: center;
     color: #757575;
     margin: 0px 300px 30px;
     padding: 50px;
     background-color: #fff6f6;
 }
-.hh{
+
+.hh {
     display: flex;
     gap: 20px;
     margin: 0 100px 100px;
-    background: #ffffff;;
+    background: #ffffff;
+    ;
 }
-.hhhh{
+
+.hhhh {
     margin-left: 40px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.803);
     background-color: #ffffff;
     padding: 40px;
 }
-.rd{
+
+.rd {
     font-size: 35px;
     text-align: center;
     margin: 150px 400px 50px;
 }
-.six{
+
+.six {
     display: flex;
     justify-content: space-between;
 }
-.msc{
+
+.msc {
     padding: 25px;
     font-size: 20px;
-    color:#474747;
+    color: #474747;
     margin: 0 50px 50px;
 }
-.download{
+
+.download {
     background-color: #FD6E0A;
     color: #ffffff;
     padding: 10px 20px;
@@ -157,15 +200,18 @@ nav li{
     font-size: 20px;
     margin: 0 550px 100px;
 }
-.p-left{
-    color:#474747;
+
+.p-left {
+    color: #474747;
     padding: 15px;
     margin-bottom: 15px;
-} 
-.h-left{
+}
+
+.h-left {
     font-size: 35px;
 }
-#footer{
+
+#footer {
     background-color: #fff6f6;
     display: flex;
     align-items: center;
@@ -173,7 +219,8 @@ nav li{
     gap: 100px;
     padding: 100px 50px;
 }
-.sub{
+
+.sub {
     background-color: #FD6E0A;
     color: #ffffff;
     padding: 10px 20px;
@@ -181,79 +228,102 @@ nav li{
     border-style: none;
     font-size: 20px;
 }
+
 @media screen and (max-width: 576px) {
-    .gh, .gghh{
+
+    .gh,
+    .gghh {
         margin: 0px;
         padding: 10px;
     }
-    .hh{
+
+    .hh {
         flex-direction: column;
     }
-    .rd{
+
+    .rd {
         margin: 0;
     }
-    .six{
+
+    .six {
         flex-direction: column;
     }
-    .msc{
+
+    .msc {
         margin: 0 10px;
         padding: 20px;
     }
-    #footer{
+
+    #footer {
         padding: 10px;
         flex-direction: column-reverse;
         text-align: center;
         gap: 20;
     }
-    .p-left{
+
+    .p-left {
         padding: 5px;
     }
-    #about{
+
+    #about {
         padding: 20px;
         margin: 0;
     }
-    .ab{
+
+    .ab {
         flex-direction: column;
         text-align: center;
     }
-    nav{
+
+    nav {
         margin-left: 0px;
-        justify-content:;
+        /* justify-content:; */
     }
-    nav ul{
-        justify-content:flex-start;
+
+    nav ul {
+        justify-content: flex-start;
         gap: 45%;
     }
-    nav h2{
+
+    nav h2 {
         display: none;
     }
-    nav li{
+
+    nav li {
         margin-left: 0px;
     }
-    .hire-me, .Down{
+
+    .hire-me,
+    .Down {
         font-size: 1.2em;
         padding: 2px 10px 5px;
         height: 40px;
         white-space: nowrap;
     }
-    .contact{
+
+    .contact {
         font-size: 1.2em;
         padding: 2px 20px 5px;
         height: 40px;
     }
-    .name-intro{
+
+    .name-intro {
         font-size: 2em;
     }
-    .name{
+
+    .name {
         font-size: 3em;
-    } 
-    .align{
+    }
+
+    .align {
         margin: 0 30px 0 100px;
     }
-    .align > img{
+
+    .align>img {
         width: 150px;
     }
-    .download{
+
+    .download {
         margin: 0 30px 100px;
     }
 }

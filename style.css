@@ -327,3 +327,7 @@ nav li {
         margin: 0 30px 100px;
     }
 }
+
+.hide{
+    display: none;
+}
